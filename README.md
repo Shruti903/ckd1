@@ -7,8 +7,8 @@ The app takes basic patient data as input, scales it, and runs a prediction to d
 
 ## 📌 Features
 - **Web Interface** for input (age, blood pressure, specific gravity, albumin, sugar)
-- **Machine Learning Model** for prediction (saved with `joblib`)
-- **JSON Response** for easy frontend integration
+- **Machine Learning Model** for prediction model (saved with `joblib`)
+- **JSON Response** for easy frontend integration 
 - **Probability & Risk Score** displayed
 
 ---
