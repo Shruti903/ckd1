@@ -7,7 +7,7 @@ import joblib
 model = joblib.load("ckd_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
-# Function to make predictions
+
 def predict_ckd():
     try:
         # Get values from input fields
@@ -66,6 +66,7 @@ tk.Button(root, text="Predict CKD", command=predict_ckd, bg="blue", fg="white", 
 
 # Run GUI
 root.mainloop()
+
 
 
 
