@@ -25,7 +25,7 @@ def predict_ckd():
         prediction = model.predict(new_patient_scaled)
         proba = model.predict_proba(new_patient_scaled)  
 
-        # Show result with probability
+        
         if prediction[0] == 1:
             messagebox.showwarning("Prediction", f"🔴 CKD Detected! (Risk: {proba[0][1]*100:.2f}%)")
         else:
@@ -66,5 +66,6 @@ tk.Button(root, text="Predict CKD", command=predict_ckd, bg="blue", fg="white", 
 
 # Run GUI
 root.mainloop()
+
 
 
