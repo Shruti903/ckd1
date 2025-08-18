@@ -11,7 +11,7 @@ scaler = joblib.load("scaler.pkl")
 def predict_ckd():
     try:
         # Get values from input fields
-        age = float(entry_age.get())
+        age =float(entry_age.get())
         bp = float(entry_bp.get())
         sg = float(entry_sg.get())
         al = int(entry_al.get())
@@ -66,3 +66,4 @@ tk.Button(root, text="Predict CKD", command=predict_ckd, bg="blue", fg="white", 
 
 # Run GUI
 root.mainloop()
+
