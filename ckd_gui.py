@@ -23,7 +23,7 @@ def predict_ckd():
 
         # Predict
         prediction = model.predict(new_patient_scaled)
-        proba = model.predict_proba(new_patient_scaled)  # Get probability
+        proba = model.predict_proba(new_patient_scaled)  
 
         # Show result with probability
         if prediction[0] == 1:
@@ -66,4 +66,5 @@ tk.Button(root, text="Predict CKD", command=predict_ckd, bg="blue", fg="white", 
 
 # Run GUI
 root.mainloop()
+
 
